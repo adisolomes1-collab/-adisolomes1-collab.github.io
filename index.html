@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proiect despre Oracolul din Delphi: sanctuarul lui Apollo, Pythia, ritualul profeției și influența sa în lumea greacă.">
+  <title>Oracolul din Delphi | Glasul lui Apollo</title>
+  <link rel="preconnect" href="https://upload.wikimedia.org">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23151b2b'/%3E%3Cpath d='M12 49h40M18 45h28M21 42V24h22v18M18 24h28L32 13z' fill='none' stroke='%23d3ad62' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root { --ink:#171b28; --paper:#f4eedf; --gold:#b88a3b; --wine:#6e2434; --mist:#d9d3c5; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:#f4eedf; color:var(--ink); font-family:Georgia, "Times New Roman", serif; line-height:1.72; text-align:left; }
+    header { min-height:92vh; display:grid; align-items:end; position:relative; overflow:hidden; color:white; background:linear-gradient(90deg, rgba(12,17,30,.95) 0%, rgba(12,17,30,.68) 52%, rgba(12,17,30,.25) 100%), url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Temple_of_Apollo_at_Delphi_Panoramic.jpg?width=1280") center/cover; }
+    nav { position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:24px max(5vw, 24px); border-bottom:1px solid rgba(255,255,255,.24); font-family:Arial, sans-serif; }
+    nav a { color:#fff; text-decoration:none; margin-left:22px; font-size:.9rem; }
+    .mark { color:#e3c17d; letter-spacing:.18em; font-weight:bold; }
+    .hero { max-width:900px; padding:120px max(7vw, 28px) 10vh; }
+    .eyebrow { color:#e3c17d; font:700 .78rem Arial,sans-serif; letter-spacing:.22em; text-transform:uppercase; }
+    h1 { font-size:clamp(3.4rem, 10vw, 8.3rem); line-height:.84; font-weight:normal; margin:.18em 0 .2em; letter-spacing:-.055em; }
+    .lead { max-width:650px; font-size:clamp(1.05rem, 2vw, 1.35rem); color:#eee8dc; }
+    main { width:min(1160px, 90vw); margin:auto; }
+    .intro { display:grid; grid-template-columns:.7fr 1.3fr; gap:9vw; padding:110px 0 80px; }
+    .chapter { color:var(--wine); font:700 .75rem Arial,sans-serif; letter-spacing:.18em; text-transform:uppercase; }
+    h2 { font-size:clamp(2rem, 4vw, 3.6rem); line-height:1.07; font-weight:normal; margin:.3em 0 .6em; }
+    h3 { color:var(--wine); font-size:1.45rem; margin-top:2em; }
+    p { margin:0 0 1.35em; }
+    .dropcap:first-letter { float:left; color:var(--wine); font-size:5.4rem; line-height:.7; padding:.12em .1em 0 0; }
+    .quote { margin:10px 0 70px; padding:36px 5vw; border-top:1px solid var(--gold); border-bottom:1px solid var(--gold); text-align:center; font-size:clamp(1.5rem, 3vw, 2.35rem); font-style:italic; }
+    .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; margin:50px 0 100px; }
+    .card { border-top:4px solid var(--gold); padding:24px 4px; }
+    .card strong { display:block; font-size:2.7rem; font-weight:normal; color:var(--wine); }
+    .feature { background:var(--ink); color:#eee8dc; margin:0 calc(50% - 50vw); padding:90px max(5vw, calc((100vw - 1160px)/2)); display:grid; grid-template-columns:1fr 1fr; gap:7vw; }
+    .feature h2, .feature h3 { color:#e3c17d; }
+    .timeline { border-left:1px solid var(--gold); padding-left:30px; }
+    .timeline p { position:relative; }
+    .timeline p:before { content:""; position:absolute; width:9px; height:9px; border-radius:50%; background:var(--gold); left:-35px; top:.55em; }
+    .legacy { padding:100px 0; max-width:830px; margin:auto; }
+    footer { background:#111522; color:#bbb5aa; padding:50px max(5vw,24px); text-align:center; font:14px/1.7 Arial,sans-serif; }
+    footer a { color:#e3c17d; }
+    @media (max-width:760px) { nav .links { display:none; } header { min-height:78vh; } .intro,.feature,.grid { grid-template-columns:1fr; } .intro { gap:20px; padding-top:70px; } .grid { gap:5px; } }
+  </style>
+</head>
+<body bgcolor="#f4eedf" align="left">
+  <!-- Proiect realizat ca document HTML, folosind marcajele cerute. -->
+  <header id="sus">
+    <nav>
+      <span class="mark">DELPHI</span>
+      <span class="links"><a href="#istorie">Istorie</a><a href="#ritual">Ritual</a><a href="#mostenire">Mo&#537;tenire</a></span>
+    </nav>
+    <div class="hero">
+      <div class="eyebrow">Grecia antic&#259; &bull; Muntele Parnas</div>
+      <h1>Oracolul<br>din Delphi</h1>
+      <p class="lead">Locul &#238;n care regii, cet&#259;&#539;ile &#537;i oamenii obi&#537;nui&#539;i veneau s&#259; afle voin&#539;a zeului Apollo.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="istorie">
+      <div>
+        <span class="chapter">I &mdash; Centrul lumii</span>
+        <h2>Un sanctuar &#238;ntre munte &#537;i legend&#259;</h2>
+        <nobr>Delphi &mdash; &bdquo;buricul lumii&rdquo;</nobr>
+      </div>
+      <div>
+        <p class="dropcap">Pe versantul sudic al Muntelui Parnas, deasupra unei v&#259;i largi cu m&#259;slini, se afla unul dintre cele mai respectate locuri ale lumii grece&#537;ti. Sanctuarul de la Delphi era dedicat lui Apollo, zeul luminii, al muzicii, al ordinii &#537;i al profe&#539;iei. Grecii considerau c&#259; acest loc se g&#259;sea chiar &#238;n centrul p&#259;m&#226;ntului. Potrivit mitului, Zeus a eliberat doi vulturi din capetele opuse ale lumii, iar p&#259;s&#259;rile s-au &#238;nt&#226;lnit la Delphi. Punctul a fost marcat printr-o piatr&#259; sacr&#259; numit&#259; <i>omphalos</i>, adic&#259; &bdquo;buric&rdquo;.</p>
+        <p>Importan&#539;a locului nu provenea numai din frumuse&#539;ea peisajului. Aici func&#539;iona oracolul lui Apollo, o institu&#539;ie religioas&#259; consultat&#259; timp de secole. Oamenii veneau cu &#238;ntreb&#259;ri despre r&#259;zboaie, colonii, legi, c&#259;s&#259;torii, mo&#537;teniri sau c&#259;l&#259;torii. R&#259;spunsurile erau rostite de Pythia, preoteasa zeului, &#537;i interpretate de preo&#539;ii templului. Pentru greci, mesajul nu era o simpl&#259; prezicere, ci o form&#259; de comunicare cu divinitatea.</p>
+        <p>&#206;naintea cultului lui Apollo, tradi&#539;ia spunea c&#259; locul &#238;i apar&#539;inuse zei&#539;ei Geea &#537;i fusese p&#259;zit de &#537;arpele Python. Apollo ar fi ucis monstrul &#537;i ar fi preluat sanctuarul. Numele Pythiei amintea tocmai de acest episod. Mitul explica de ce zeul purific&#259;rii trebuia el &#238;nsu&#537;i s&#259; fie cur&#259;&#539;at dup&#259; fapt&#259;, dar &#537;i de ce profe&#539;ia era legat&#259; de un spa&#539;iu vechi, misterios &#537;i considerat viu.</p>
+      </div>
+    </section>
+
+    <hr color="#b88a3b" size="2" width="100%">
+    <p class="quote">&bdquo;Cunoa&#537;te-te pe tine &#238;nsu&#539;i.&rdquo;<br><font face="Georgia" color="#6e2434" size="3">Maxim&#259; asociat&#259; templului lui Apollo</font></p>
+
+    <section>
+      <span class="chapter">II &mdash; Sanctuarul</span>
+      <h2>Drumul sacru &#537;i comorile cet&#259;&#539;ilor</h2>
+      <p>C&#259;l&#259;torul care ajungea la Delphi intra &#238;ntr-un complex construit pe terase. Urca pe Calea Sacr&#259;, un drum &#537;erpuit printre statui, monumente votive &#537;i mici cl&#259;diri numite tezaure. Cet&#259;&#539;ile grece&#537;ti ridicau aceste tezaure pentru a p&#259;stra ofrandele aduse zeului &#537;i pentru a-&#537;i ar&#259;ta bog&#259;&#539;ia. Tezaurul atenienilor, construit din marmur&#259;, amintea de victoriile cet&#259;&#539;ii. Astfel, sanctuarul era &#537;i un loc al competi&#539;iei politice: fiecare comunitate dorea s&#259; fie remarcat&#259;, dar toate acceptau autoritatea simbolic&#259; a lui Apollo.</p>
+      <p>Templul principal a fost ref&#259;cut de mai multe ori din cauza incendiilor, cutremurelor &#537;i alunec&#259;rilor de teren. Cl&#259;direa ale c&#259;rei ruine se v&#259;d ast&#259;zi dateaz&#259; din secolul al IV-lea &#238;.Hr. Avea coloane dorice &#537;i ad&#259;postea statuia lui Apollo, piatra omphalos &#537;i spa&#539;iul &#238;n care profe&#539;ea Pythia. Deasupra templului se aflau teatrul &#537;i stadionul. La Delphi aveau loc Jocurile Pythice, competi&#539;ii muzicale &#537;i sportive organizate &#238;n cinstea zeului. Ele se num&#259;rau printre marile festivaluri panelenice, al&#259;turi de Jocurile Olimpice.</p>
+      <div class="grid">
+        <div class="card"><strong>7</strong><p>zile dup&#259; luna nou&#259;, &#238;n lunile potrivite, putea fi consultat oracolul.</p></div>
+        <div class="card"><strong>4</strong><p>ani desp&#259;r&#539;eau edi&#539;iile importante ale Jocurilor Pythice.</p></div>
+        <div class="card"><strong>1</strong><p>preoteas&#259;, Pythia, devenea glasul ritual al lui Apollo.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="feature" id="ritual">
+    <div>
+      <span class="chapter">III &mdash; Consulta&#539;ia</span>
+      <h2>Cum vorbea Pythia</h2>
+      <p>&#206;n ziua consulta&#539;iei, Pythia se preg&#259;tea prin purificare. Se sp&#259;la &#238;n apa izvorului Castalia, apoi intra &#238;n templu. Solicitan&#539;ii trebuiau &#537;i ei s&#259; respecte un ritual, s&#259; aduc&#259; o ofrand&#259; &#537;i s&#259; pl&#259;teasc&#259; o tax&#259;. O capr&#259; era stropit&#259; cu ap&#259; rece; dac&#259; animalul tremura, semnul era considerat favorabil, iar sacrificiul putea continua. Dac&#259; reac&#539;ia lipsea, consulta&#539;ia era am&#226;nat&#259;.</p>
+      <p>Preoteasa se a&#537;eza pe un trepied &#238;ntr-o &#238;nc&#259;pere interioar&#259; numit&#259; <i>adyton</i>. Tradi&#539;ia men&#539;ioneaz&#259; frunze de laur, planta lui Apollo, &#537;i apa sacr&#259;. Pythia asculta &#238;ntrebarea, intra &#238;ntr-o stare ritual&#259; &#537;i rostea r&#259;spunsul. Autorii antici nu descriu cu to&#539;ii scena &#238;n acela&#537;i fel, de aceea imaginea unei femei care vorbea complet necontrolat trebuie privit&#259; cu pruden&#539;&#259;. Este posibil ca multe r&#259;spunsuri s&#259; fi fost clare, iar ambiguitatea lor s&#259; fi avut un rol religios &#537;i diplomatic.</p>
+      <p>Preo&#539;ii templului cuno&#537;teau lumea greac&#259;, tradi&#539;iile cet&#259;&#539;ilor &#537;i situa&#539;iile politice. Ei puteau formula sau explica mesajul &#238;ntr-o form&#259; potrivit&#259;. Oracolul nu dicta mereu o ac&#539;iune exact&#259;, ci oferea un avertisment, o condi&#539;ie ori o imagine cu mai multe sensuri. Responsabilitatea interpret&#259;rii r&#259;m&#226;nea celui care &#238;ntreba. Tocmai aceast&#259; combina&#539;ie dintre autoritatea divin&#259; &#537;i libertatea omului a f&#259;cut oracolul at&#226;t de influent.</p>
+    </div>
+    <div class="timeline">
+      <h3>Etapele ritualului</h3>
+      <p><b>Purificarea</b><br>Cei implica&#539;i se preg&#259;teau la izvorul Castalia.</p>
+      <p><b>Ofranda</b><br>Solicitantul aducea daruri &#537;i achita taxa stabilit&#259;.</p>
+      <p><b>Sacrificiul</b><br>Reac&#539;ia caprei confirma dac&#259; ziua era favorabil&#259;.</p>
+      <p><b>&#206;ntrebarea</b><br>Cererea era prezentat&#259; concis, &#238;n ordinea stabilit&#259;.</p>
+      <p><b>R&#259;spunsul</b><br>Pythia vorbea, iar mesajul era consemnat sau interpretat.</p>
+      <h3>Un r&#259;spuns celebru</h3>
+      <p>C&#226;nd regele Cresus al Lidiei a &#238;ntrebat dac&#259; s&#259; atace Persia, tradi&#539;ia spune c&#259; i s-a r&#259;spuns c&#259; va distruge un mare imperiu. El a pornit r&#259;zboiul, dar imperiul distrus a fost chiar al s&#259;u. Povestea arat&#259; pericolul de a auzi numai ceea ce dorim.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="legacy" id="mostenire">
+      <span class="chapter">IV &mdash; Putere &#537;i influen&#539;&#259;</span>
+      <h2>Vocea care putea schimba istoria</h2>
+      <p>Oracolul era consultat nu numai de persoane particulare, ci &#537;i de conduc&#259;tori. &#206;naintea fond&#259;rii unei colonii, grecii cereau adesea aprobarea lui Apollo. Un r&#259;spuns favorabil oferea expedi&#539;iei legitimitate &#537;i &#238;i unea pe participan&#539;i. Delphi putea indica direc&#539;ia c&#259;l&#259;toriei sau persoana care urma s&#259; conduc&#259; noua a&#537;ezare. Prin asemenea decizii, sanctuarul a contribuit indirect la r&#259;sp&#226;ndirea culturii grece&#537;ti &#238;n jurul M&#259;rii Mediterane &#537;i al M&#259;rii Negre.</p>
+      <p>&#206;n timpul conflictelor, mesajele oracolului deveneau foarte importante. &#206;naintea invaziei persane, atenienii ar fi primit sfatul de a se ap&#259;ra &#238;n spatele unui &bdquo;zid de lemn&rdquo;. Temistocle a interpretat expresia ca referire la flot&#259;. Cor&#259;biile ateniene au avut apoi un rol decisiv &#238;n victoria de la Salamina. Nu putem separa complet legenda de istorie, dar episodul arat&#259; cum un mesaj religios putea fi transformat &#238;n strategie.</p>
+      <p>Sanctuarul pretindea neutralitate, &#238;ns&#259; nu era izolat de politic&#259;. Unele cet&#259;&#539;i primeau dreptul de a consulta oracolul cu prioritate, iar darurile bogate puteau crea rela&#539;ii apropiate. Delphi era administrat printr-o alian&#539;&#259; religioas&#259; numit&#259; Amfic&#539;ionia. Luptele pentru controlul sanctuarului au provocat a&#537;a-numitele r&#259;zboaie sacre. Prestigiul religios, bog&#259;&#539;ia &#537;i pozi&#539;ia geografic&#259; f&#259;ceau din acest loc o miz&#259; real&#259;.</p>
+      <h3>Declinul oracolului</h3>
+      <p>Dup&#259; cucerirea Greciei de c&#259;tre romani, Delphi a continuat s&#259; fie vizitat. Unii &#238;mp&#259;ra&#539;i au respectat sanctuarul, al&#539;ii i-au luat operele de art&#259;. Lumea mediteraneean&#259; se schimba, iar vechile institu&#539;ii ale cet&#259;&#539;ilor &#238;&#537;i pierdeau treptat rolul. Cre&#537;tinismul s-a r&#259;sp&#226;ndit, cultele tradi&#539;ionale au fost restr&#226;nse, iar oracolul a &#238;ncetat s&#259; func&#539;ioneze spre sf&#226;r&#537;itul Antichit&#259;&#539;ii. Nu exist&#259; un singur moment perfect documentat care s&#259; marcheze ultima profe&#539;ie, ci mai cur&#226;nd un proces de dispari&#539;ie.</p>
+      <p>Ruinele au r&#259;mas ascunse mult timp sub satul Kastri. &#206;n secolul al XIX-lea, arheologii francezi au &#238;nceput cercet&#259;ri sistematice, dup&#259; mutarea satului. Marea S&#259;p&#259;tur&#259;, pornit&#259; &#238;n 1892, a scos la lumin&#259; templul, tezaurele, inscrip&#539;iile, teatrul &#537;i numeroase statui. Printre cele mai cunoscute descoperiri se afl&#259; Auriga din Delphi, o statuie de bronz remarcabil de bine p&#259;strat&#259;. Cercetarea arheologic&#259; a transformat pove&#537;tile antice &#238;ntr-un peisaj istoric ce poate fi studiat.</p>
+      <h3>&#206;ntre explica&#539;ie &#537;i mister</h3>
+      <p>O tem&#259; dezb&#259;tut&#259; este originea st&#259;rii profetice a Pythiei. Unii cercet&#259;tori au analizat fisurile geologice de sub templu &#537;i posibilitatea existen&#539;ei unor gaze naturale. Al&#539;ii atrag aten&#539;ia c&#259; dovezile nu justific&#259; explica&#539;ii spectaculoase. Ritualul, a&#537;tept&#259;rile religioase, autoritatea locului &#537;i preg&#259;tirea preotesei pot explica experien&#539;a f&#259;r&#259; a reduce totul la o singur&#259; substan&#539;&#259;. Un r&#259;spuns corect trebuie s&#259; deosebeasc&#259; datele arheologice de ipotezele moderne.</p>
+      <p>Mo&#537;tenirea oracolului este mai profund&#259; dec&#226;t imaginea unei prezic&#259;toare. Delphi era un loc &#238;n care religia, politica, arta &#537;i identitatea greac&#259; se &#238;nt&#226;lneau. Inscrip&#539;ia &bdquo;Cunoa&#537;te-te pe tine &#238;nsu&#539;i&rdquo; amintea vizitatorului c&#259; omul are limite. O alt&#259; maxim&#259;, &bdquo;Nimic prea mult&rdquo;, recomanda echilibrul. Aceste idei explic&#259; de ce sanctuarul a r&#259;mas un simbol al cunoa&#537;terii: adev&#259;rul nu era oferit ca o formul&#259; u&#537;oar&#259;, ci trebuia &#238;n&#539;eles cu aten&#539;ie.</p>
+      <p>Povestea lui Delphi continu&#259; s&#259; fascineze pentru c&#259; pune o &#238;ntrebare mereu actual&#259;: cum lu&#259;m o decizie atunci c&#226;nd viitorul este nesigur? Grecii apelau la Apollo, dar primeau adesea un mesaj care cerea interpretare, cump&#259;tare &#537;i asumare. Oracolul nu elimina nesiguran&#539;a. O transforma &#238;ntr-un moment de reflec&#539;ie. Din acest motiv, ruinele templului nu vorbesc numai despre credin&#539;ele unei civiliza&#539;ii disp&#259;rute, ci &#537;i despre dorin&#539;a omului de a g&#259;si sens &#238;nainte de a alege.</p>
+      <hr color="#b88a3b" size="1" width="55%" align="left">
+      <p><font face="Arial" color="#6e2434" size="3"><b>Concluzie:</b></font> Oracolul din Delphi a fost simultan sanctuar, centru diplomatic, arhiv&#259; de memorie &#537;i scen&#259; a competi&#539;iei dintre cet&#259;&#539;i. Autoritatea lui a rezistat fiindc&#259; r&#259;spunsurile puteau vorbi at&#226;t comunit&#259;&#539;ii, c&#226;t &#537;i individului. Ast&#259;zi, arheologia ne ajut&#259; s&#259; &#238;n&#539;elegem cl&#259;dirile &#537;i ritualurile, iar miturile p&#259;streaz&#259; atmosfera locului. &#206;mpreun&#259;, ele fac din Delphi unul dintre cele mai puternice simboluri ale Antichit&#259;&#539;ii.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Imagine: Templul lui Apollo la Delphi, fotografie de Jason M. Ramos, licen&#539;&#259; CC BY 2.0, prin <a href="https://commons.wikimedia.org/wiki/File:Temple_of_Apollo_at_Delphi_Panoramic.jpg">Wikimedia Commons</a>.</p>
+    <p>Proiect HTML despre Oracolul din Delphi &bull; <a href="#sus">&#206;napoi sus &uarr;</a></p>
+  </footer>
+</body>
+</html>
